@@ -16,12 +16,9 @@ const timeAgo = new TimeAgo("en-US");
 const CommentCard = ({
   author,
   points,
-  story_id,
   text,
   children,
-  id,
   created_at,
-  parent_id,
   type,
 }: ICommentType) => {
   const [isRepliesOn, setRepliesToggle] = useState<boolean>(false);
@@ -65,12 +62,11 @@ const CommentCard = ({
             author={item.author}
             children={item.children}
             created_at={item.created_at}
-            story_id={item.story_id}
-            id={item.id}
             text={item.text}
             points={item.points}
-            parent_id={item.parent_id}
             type={item.type}
+            key={item.id}
+            id={item.id}
           />
         ))}
     </div>

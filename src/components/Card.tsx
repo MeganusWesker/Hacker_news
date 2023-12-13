@@ -10,7 +10,7 @@ TimeAgo.addDefaultLocale(en)
 
 const timeAgo = new TimeAgo('en-US')
 
-const Card = ({objectId,author,points,storyId,title,index,numComments,createdAt,updatedAt}:ICardProps) => {
+const Card = ({objectId,author,points,title,numComments,createdAt,updatedAt}:ICardProps) => {
   return (
     <Link to={`/postDetail/${objectId}`} className='card'>
       <h1>{title}</h1>

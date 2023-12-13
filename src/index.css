@@ -10,6 +10,7 @@
     --cardInfoColor:#3498db;
     --cardInfoColor1:#555;
     --titleColor:rgba(0, 68, 255, 0.62);
+    
   }
   
   .dark-mode {
@@ -19,6 +20,7 @@
     color: white;
     --cardInfoColor:rgb(214 227 237);
     --cardInfoColor1:#c9c9c9;
+    --titleColor:rgb(175 189 227 / 62%);
   }
   
   .dark-mode-text{

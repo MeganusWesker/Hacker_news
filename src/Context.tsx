@@ -34,14 +34,12 @@ const Context = ({children}:{children:JSX.Element}) => {
     const fetchData = async (): Promise<void> => {
       try {
         setLoading(true);
-        const { data } = await axios.get(`${server}/search?query=${keyword}&page=${3}`);
-    
-        setTotal(data.total)
+        const { data } = await axios.get(`${server}/search?query=${keyword}&page=${pageNo}`);
         setData(data.hits);
         setLoading(false);
       
       } catch (error) {
-        console.log(error);
+        setLoading(false);
       }
     };
 
@@ -57,7 +55,6 @@ const Context = ({children}:{children:JSX.Element}) => {
     }, 2000); // minimum wait time will be 2 sec
 
     return () => {
-      console.log("changing")
       clearTimeout(timeOut); // cleanUp request which no longer needed on commentUnmount
     };
   }, [keyword,pageNo]);

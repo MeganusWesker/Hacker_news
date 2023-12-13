@@ -31,16 +31,13 @@ export interface IData{
 }
 
 export interface ICommentType{
-
-    id:string;
     author:string;
     points:number;
-    story_id:number;
     text:string;
     created_at:string;
-    parent_id:number;
     children:ICommentType[];
     type:string;
+    id:string;
 }
 
 export interface IPostType{

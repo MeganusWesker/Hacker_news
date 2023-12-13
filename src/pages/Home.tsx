@@ -4,6 +4,7 @@ import "./home.css";
 import { ContextProvider } from "../Context";
 import Card from "../components/Card";
 import { IData } from "../util/interface";
+import Loader from "../components/Loader";
 
 enum Theme {
   Dark = 'dark',
@@ -12,10 +13,7 @@ enum Theme {
 
 const Home = () => {
 
-  const {theme,setTheme,keyword,setKeyword,pageNo,setPageNo,total,data}=useContext(ContextProvider);
-
-  console.log(data)
- 
+  const {theme,setTheme,keyword,setKeyword,pageNo,setPageNo,total,data,loading}=useContext(ContextProvider);
 
   const toggleTheme = () => {
 
@@ -50,22 +48,26 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="cardContainer">
-        {data && data.map((item:IData,index:number)=>(
-            <Card
-              title={item.title}
-              key={item.objectID}
-              objectId={item.objectID}
-              author={item.author}
-              numComments={item.num_comments}
-              createdAt={item.created_at}
-              updatedAt={item.updated_at}
-              storyId={item.story_id}
-              points={item.points}
-              index={index}
-            />
-        ))}
-      </div>
+       {loading ? <Loader/> :
+             <div className="cardContainer">
+             {data && data.map((item:IData,index:number)=>(
+                 <Card
+                 
+                   title={item.title}
+                   key={item.objectID}
+                   objectId={item.objectID}
+                   author={item.author}
+                   numComments={item.num_comments}
+                   createdAt={item.created_at}
+                   updatedAt={item.updated_at}
+                   storyId={item.story_id}
+                   points={item.points}
+                   index={index}
+                 />
+             ))}
+           </div>
+     
+       }
 
 
 

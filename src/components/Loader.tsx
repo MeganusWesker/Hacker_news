@@ -2,7 +2,9 @@ import "./loader.css"
 
 const Loader = () => {
   return (
-    <div>Loader</div>
+    <div className="loaderContainer">
+       <div className="loader"></div>
+    </div>
   )
 }
 
