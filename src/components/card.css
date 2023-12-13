@@ -5,6 +5,11 @@
     border-radius: 5px;
     text-decoration: none;
     margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
 }
 
 .card h1{
