@@ -9,10 +9,12 @@
   
   #banner h1 {
     color: white;
+    font-family: 'Playfair Display', serif;
   }
   
   #banner p {
     color: white;
+    font-family: 'Roboto', sans-serif;
   }
   
   #banner div {
@@ -23,12 +25,10 @@
     height: 80%;
   }
   
-  .ImageContainer {
-    width: 80%;
+  .cardContainer {
+    width: 90%;
     margin: auto;
     padding-top: 20px;
-    columns: 3 300px;
-    gap:50px;
   }
   
   .paginationConatiner{

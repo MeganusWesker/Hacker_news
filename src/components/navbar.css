@@ -12,6 +12,7 @@
   
   .navBarContainer h1 {
     color: var(--mainColor1);
+    font-family: 'Playfair Display', serif;
   }
   
   #navBarLeft {
@@ -79,7 +80,7 @@
   #navBarLeft ul li a {
     text-decoration: none;
     color: var(--mainColor1);
-  
+    font-family: 'Roboto', sans-serif;
   
   }
   

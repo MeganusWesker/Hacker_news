@@ -7,15 +7,17 @@
     --mainColor1: rgba(0, 0, 0, 0.86);
     --color2: rgb(197, 197, 197, 0.27);
     --popUpcolor:white;
+    --cardInfoColor:#3498db;
+    --cardInfoColor1:#555;
   }
-  
-  
   
   .dark-mode {
     background-color: rgb(22, 21, 21);
     --mainColor1: white;
     --popUpcolor:rgba(0, 0, 0, 0.9);
     color: white;
+    --cardInfoColor:rgb(214 227 237);
+    --cardInfoColor1:#c9c9c9;
   }
   
   .dark-mode-text{
