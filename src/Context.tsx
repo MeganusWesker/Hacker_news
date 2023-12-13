@@ -18,7 +18,7 @@ const initialContextValues: IContextType = {
 
 export const ContextProvider = createContext<IContextType>(initialContextValues);
 
-export const server = "http://hn.algolia.com/api/v1";
+export const server = "https://hn.algolia.com/api/v1";
 
 
 const Context = ({children}:{children:JSX.Element}) => {
