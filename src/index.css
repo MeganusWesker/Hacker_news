@@ -9,6 +9,7 @@
     --popUpcolor:white;
     --cardInfoColor:#3498db;
     --cardInfoColor1:#555;
+    --titleColor:rgba(0, 68, 255, 0.62);
   }
   
   .dark-mode {
@@ -31,5 +32,11 @@
   .centerItemsVertically {
     display: flex;
     align-items: center;
+    margin-left: 5px;
+  }
+
+  .postDetailInfoContiner{
+    width: 90%;
+    margin: auto;
   }
   

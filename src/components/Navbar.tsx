@@ -71,7 +71,7 @@ const Navbar = ({
           <ul id="navbarList">
             <li>
               {" "}
-              <Link to="/">Explore</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               {" "}

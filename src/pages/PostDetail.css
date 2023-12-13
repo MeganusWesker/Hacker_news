@@ -1,0 +1,19 @@
+.postDetailMainContaner{
+    width: 92%;
+    margin:auto;
+    padding-top: 20px;
+}
+
+.postInfoTitle p{
+     color: var(--titleColor);
+
+}
+
+.postDetailInfoContiner{
+    margin-top: 5px;
+}
+
+.commentsContainer h1{
+    font-family: 'Playfair Display', serif;
+    color: var(--mainColor);
+}

@@ -12,7 +12,7 @@ const timeAgo = new TimeAgo('en-US')
 
 const Card = ({objectId,author,points,storyId,title,index,numComments,createdAt,updatedAt}:ICardProps) => {
   return (
-    <Link to={`/${objectId}`} className='card'>
+    <Link to={`/postDetail/${objectId}`} className='card'>
       <h1>{title}</h1>
       <div className='centerItemsVertically cardInfo'>
         <p>Author:</p>

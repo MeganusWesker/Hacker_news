@@ -30,6 +30,18 @@ export interface IData{
     updated_at:string;
 }
 
+export interface ICommentType{
+
+    id:string;
+    author:string;
+    points:number;
+    story_id:number;
+    title:string;
+    created_at:string;
+    parent_id:number;
+    children:ICommentType[];
+}
+
 export interface IContextType{
     loading:boolean;
     setLoading:React.Dispatch<React.SetStateAction<boolean>>;
