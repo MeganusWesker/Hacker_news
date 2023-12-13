@@ -25,7 +25,10 @@ const Navbar = ({
   return (
     <nav id="navBar">
       <div className="navBarContainer">
+        <Link to={'/'}>
         <h1>Hacker News</h1>
+        </Link>
+        
 
         <div id="menuIcon" onClick={toggleHameburger}>
           <svg

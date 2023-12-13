@@ -10,9 +10,14 @@
     align-items: center;
   }
   
+  .navBarContainer a{
+    text-decoration: none;
+  }
+
   .navBarContainer h1 {
     color: var(--mainColor1);
     font-family: 'Playfair Display', serif;
+    cursor: pointer;
   }
   
   #navBarLeft {

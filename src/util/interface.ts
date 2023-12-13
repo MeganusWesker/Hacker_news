@@ -36,11 +36,23 @@ export interface ICommentType{
     author:string;
     points:number;
     story_id:number;
-    title:string;
+    text:string;
     created_at:string;
     parent_id:number;
     children:ICommentType[];
+    type:string;
 }
+
+export interface IPostType{
+    title:string;
+    author:string;
+    points:number;
+    type:string;
+    created_at:string;
+    children:ICommentType[];
+  
+}
+
 
 export interface IContextType{
     loading:boolean;

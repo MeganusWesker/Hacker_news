@@ -1,6 +1,39 @@
 .commnetCardContainer{
-    border: 1px solid black;
-    border-radius: 5px;
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 15px;
+}
+
+
+.commentAuthor{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.second{
+    display: flex;
+    width: 50%;
+    padding: 5px;
+}
+
+.second p{
+    color:  var(--cardInfoColor1);
+    padding-right: 5px;
+}
+
+.third {
+    display:flex;
+    align-items: center;
+}
+
+.third div{
+    width: 30px;
+    height: 1px;
+    background-color: var(--cardInfoColor1);
+    margin-right: 5px;
+}
+
+.third p{
+    color: var(--cardInfoColor1);
+    cursor: pointer;
 }

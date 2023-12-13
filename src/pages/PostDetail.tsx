@@ -4,7 +4,7 @@ import { ContextProvider, server } from "../Context";
 import { useContext, useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
-import { Theme } from "../util/interface";
+import { IPostType, Theme } from "../util/interface";
 import "./PostDetail.css";
 import TimeAgo from "javascript-time-ago";
 
@@ -16,11 +16,20 @@ TimeAgo.addLocale(en);
 
 const timeAgo = new TimeAgo("en-US");
 
+const initialPostValue: IPostType = {
+  title:"",
+  author:"",
+  points:0,
+  type:"",
+  created_at:String (new Date()),
+  children:[]
+};
+
 const PostDetail = () => {
   const { theme, keyword, setKeyword, setTheme } = useContext(ContextProvider);
 
   const [loading, setLoading] = useState<boolean>(false);
-  const [post, setPost] = useState<Object>({});
+  const [post, setPost] = useState<IPostType>(initialPostValue);
 
   let { id } = useParams();
 
@@ -92,10 +101,10 @@ const PostDetail = () => {
                     created_at={item.created_at}
                     story_id={item.story_id}
                     id={item.id}
-                    title={item.text}
+                    text={item.text}
                     points={item.points}
                     parent_id={item.parent_id}
-                    
+                    type={item.type}
                  />
                ))}
             </div>
